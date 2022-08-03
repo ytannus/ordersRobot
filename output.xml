@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.5 on darwin)" generated="20220802 13:10:53.990" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="/Users/ytannus/.vscode/extensions/robocorp.robotframework-lsp-0.49.0/src/robotframework_ls/vendored/robotframework_interactive/robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open the robot order website">
+<msg timestamp="20220802 13:10:55.312" level="FAIL">No keyword with name 'Open the robot order website' found.</msg>
+<status status="FAIL" starttime="20220802 13:10:55.312" endtime="20220802 13:10:55.312"/>
+</kw>
+<kw name="Get orders">
+<var>${orders}</var>
+<status status="NOT RUN" starttime="20220802 13:10:55.315" endtime="20220802 13:10:55.316"/>
+</kw>
+<for flavor="IN">
+<var>${row}</var>
+<value>@{orders}</value>
+<iter>
+<var name="${row}"/>
+<kw name="Close the annoying modal">
+<status status="NOT RUN" starttime="20220802 13:10:55.318" endtime="20220802 13:10:55.318"/>
+</kw>
+<kw name="Fill the form">
+<arg>${row}</arg>
+<status status="NOT RUN" starttime="20220802 13:10:55.321" endtime="20220802 13:10:55.321"/>
+</kw>
+<kw name="Preview the robot">
+<status status="NOT RUN" starttime="20220802 13:10:55.324" endtime="20220802 13:10:55.324"/>
+</kw>
+<kw name="Submit the order">
+<status status="NOT RUN" starttime="20220802 13:10:55.326" endtime="20220802 13:10:55.326"/>
+</kw>
+<kw name="Store the receipt as a PDF file">
+<var>${pdf}</var>
+<arg>${row}[Order number]</arg>
+<status status="NOT RUN" starttime="20220802 13:10:55.328" endtime="20220802 13:10:55.328"/>
+</kw>
+<kw name="Take a screenshot of the robot">
+<var>${screenshot}</var>
+<arg>${row}[Order number]</arg>
+<status status="NOT RUN" starttime="20220802 13:10:55.330" endtime="20220802 13:10:55.330"/>
+</kw>
+<kw name="Embed the robot screenshot to the receipt PDF file">
+<arg>${screenshot}</arg>
+<arg>${pdf}</arg>
+<status status="NOT RUN" starttime="20220802 13:10:55.332" endtime="20220802 13:10:55.332"/>
+</kw>
+<kw name="Go to order another robot">
+<status status="NOT RUN" starttime="20220802 13:10:55.334" endtime="20220802 13:10:55.334"/>
+</kw>
+<status status="NOT RUN" starttime="20220802 13:10:55.316" endtime="20220802 13:10:55.334"/>
+</iter>
+<status status="NOT RUN" starttime="20220802 13:10:55.316" endtime="20220802 13:10:55.334"/>
+</for>
+<kw name="Create a ZIP file of the receipts">
+<status status="NOT RUN" starttime="20220802 13:10:55.336" endtime="20220802 13:10:55.336"/>
+</kw>
+<kw name="Show Message From Local Vault">
+<status status="NOT RUN" starttime="20220802 13:10:55.337" endtime="20220802 13:10:55.337"/>
+</kw>
+<status status="PASS" starttime="20220802 13:10:54.027" endtime="20220802 15:01:41.866"/>
+</kw>
+<status status="PASS" starttime="20220802 13:10:54.026" endtime="20220802 15:01:41.876"/>
+</test>
+<status status="PASS" starttime="20220802 13:10:53.992" endtime="20220802 15:01:41.885"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
